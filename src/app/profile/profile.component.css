@@ -1,0 +1,98 @@
+.profile-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width:700px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    }
+    .profile-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    }
+    td img{
+        width: 50%;
+        }
+        .profile-form {
+        width: 100%;
+        }
+        .profile-form h2 {
+        text-align: center;
+        margin: 10px;
+        }
+        .profile-form form {
+        display: flex;
+        flex-direction: column;
+        }
+        .profile-form label {
+        margin: 5px 0;
+        color: rgb(56, 56, 56);
+        }
+        .profile-form input {
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        }
+        .profile-form input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            }
+            button {
+            background-color: #256d85;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            }
+            button:hover {
+                background-color: #1f2937;
+                }
+              /* tabla */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    table {
+    table-layout: fixed;
+    width: 100%;
+    }
+    td {
+    word-wrap: break-word;
+    }
+    th,
+    td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    }
+    thead {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    }
+    #active-row:hover {
+    background-color: #f1f1f1;
+    }
+      

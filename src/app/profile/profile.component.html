@@ -1,0 +1,45 @@
+<div class="profile-container">
+    <div class="profile-image">
+    <img [src]="user.imageUrl" alt="Profile Image" />
+    <input type="file" (change)="onImageChange($event)" />
+    </div>
+    <div class="profile-form">
+    <h2>Editando datos <br>del Perfil</h2>
+    <form>
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="user.firstName" name="firstName" />
+    <label>Apellido Paterno:</label>
+    <input type="text" [(ngModel)]="user.lastName" name="lastName" />
+    <label>Correo Electro nico:</label>
+    <input type="email" [(ngModel)]="user.email" name="email" />
+    <label>Nombre de Usuario:</label>
+    <input type="text" [(ngModel)]="user.username" name="username" />
+
+</form>
+</div>
+</div>
+<div class="profile-container">
+<div class="profile-form">
+<h2>Datos actualizados en el modelo</h2>
+<table class="styled-table">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Apellido Paterno</th>
+<th>Correo</th>
+<th>Usuario</th>
+<th>imagen</th>
+</tr>
+</thead>
+<tbody>
+    <tr id="active-row">
+    <td>{{ user.firstName }}</td>
+    <td>{{ user.lastName }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.username}}</td>
+    <td><img src="{{ user.imageUrl}}" alt=""></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
