@@ -15,6 +15,7 @@ user = {
   email: "juan.perez@example.com",
   username: "juanp",
   imageUrl: "/chico.jpg",
+  Hobby: "Pelear por redes sociales",
   };
   //metodos
 // Cambio de Imagen

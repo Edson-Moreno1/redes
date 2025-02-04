@@ -10,11 +10,12 @@
     <input type="text" [(ngModel)]="user.firstName" name="firstName" />
     <label>Apellido Paterno:</label>
     <input type="text" [(ngModel)]="user.lastName" name="lastName" />
-    <label>Correo Electro nico:</label>
+    <label>Correo Electronico:</label>
     <input type="email" [(ngModel)]="user.email" name="email" />
     <label>Nombre de Usuario:</label>
     <input type="text" [(ngModel)]="user.username" name="username" />
-
+    <label>Hobby:</label>
+    <input type="text" [(ngModel)]="user.Hobby" name="Hobby" />
 </form>
 </div>
 </div>
@@ -29,6 +30,7 @@
 <th>Correo</th>
 <th>Usuario</th>
 <th>imagen</th>
+<th>Hobby</th>
 </tr>
 </thead>
 <tbody>
@@ -38,6 +40,7 @@
     <td>{{ user.email }}</td>
     <td>{{ user.username}}</td>
     <td><img src="{{ user.imageUrl}}" alt=""></td>
+    <td>{{ user.Hobby }}</td>
     </tr>
     </tbody>
     </table>
